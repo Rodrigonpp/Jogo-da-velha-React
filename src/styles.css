@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #f4f7fb;
+  background: #101827;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(47, 115, 180, 0.22),
+      transparent 32rem
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(22, 163, 142, 0.16),
+      transparent 30rem
+    ),
+    #101827;
+}
+
+button {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.game-card {
+  width: min(100%, 480px);
+  padding: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  background: rgba(22, 34, 52, 0.92);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.header {
+  text-align: center;
+}
+
+.eyebrow {
+  color: #66d9c4;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 10px 0 6px;
+  font:
+    700 clamp(2rem, 7vw, 2.7rem)/1.1 "Space Grotesk",
+    sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.header p {
+  margin: 0;
+  color: #aab7c8;
+  font-size: 0.95rem;
+}
+
+.status {
+  margin: 28px 0 18px;
+  padding: 13px 16px;
+  border: 1px solid rgba(102, 217, 196, 0.22);
+  border-radius: 12px;
+  background: rgba(102, 217, 196, 0.08);
+  color: #8ce8d7;
+  text-align: center;
+  font-weight: 700;
+}
+
+.status-finished {
+  border-color: rgba(255, 199, 102, 0.35);
+  background: rgba(255, 199, 102, 0.09);
+  color: #ffd27f;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  aspect-ratio: 1;
+}
+
+.square {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  background: #202f45;
+  color: #f4f7fb;
+  font:
+    700 clamp(2.6rem, 12vw, 4rem)/1 "Space Grotesk",
+    sans-serif;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.square:not(:disabled):hover {
+  transform: translateY(-2px);
+  border-color: #66d9c4;
+  background: #293e57;
+}
+
+.square:focus-visible,
+.reset-button:focus-visible {
+  outline: 3px solid #ffd27f;
+  outline-offset: 3px;
+}
+
+.square-x {
+  color: #67d9c4;
+}
+.square-o {
+  color: #ffbd70;
+}
+.square:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.reset-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #66d9c4;
+  color: #10202c;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    filter 0.15s ease,
+    transform 0.15s ease;
+}
+
+.reset-button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  color: #93a2b5;
+  font-size: 0.78rem;
+}
+
+.footer strong {
+  color: #66d9c4;
+}
+
+@media (max-width: 420px) {
+  .game-card {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+  .square {
+    border-radius: 12px;
+  }
+}

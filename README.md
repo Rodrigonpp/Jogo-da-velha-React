@@ -2,6 +2,11 @@
 
 Projeto de revisão da Lista 1 da disciplina Frontend Frameworks.
 
+## Aluno
+
+Rodrigo Nunes Peixoto Ramos
+Matrícula: 01777171
+
 ## Funcionalidades
 
 - Tabuleiro 3 × 3.
@@ -19,7 +24,7 @@ Projeto de revisão da Lista 1 da disciplina Frontend Frameworks.
 - Vite
 - CSS
 
-## Como executar
+## Requisitos e Como executar
 
 É necessário ter Node.js e npm instalados.
 
@@ -54,6 +59,13 @@ revisao1_tic_tac_toe/
     └── utils/
         └── game.js
 ```
+
+## Capturas de tela
+
+<img width="845" height="833" alt="image" src="https://github.com/user-attachments/assets/65c18d0a-e0f4-4813-89a6-20ccff10aaf7" />
+<img width="753" height="848" alt="image" src="https://github.com/user-attachments/assets/e4fb2a8c-921d-4172-b1c1-bba292af67e9" />
+
+
 
 ## Conceitos de React praticados
 

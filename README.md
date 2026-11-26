@@ -4,8 +4,8 @@ Projeto de revisão da Lista 1 da disciplina Frontend Frameworks.
 
 ## Aluno
 
-Rodrigo Nunes Peixoto Ramos
-Matrícula: 01777171
+- Rodrigo Nunes Peixoto Ramos
+- Matrícula: 01777171
 
 ## Funcionalidades
 
